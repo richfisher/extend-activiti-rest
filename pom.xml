@@ -5,12 +5,11 @@
 
     <groupId>fisher</groupId>
     <artifactId>extend-activiti-rest</artifactId>
-    <version>1.0</version>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.1.RELEASE</version>
+        <groupId>org.activiti</groupId>
+        <artifactId>spring-boot-samples</artifactId>
+        <version>5.17.0</version>
     </parent>
 
     <dependencies>
@@ -19,10 +18,16 @@
             <artifactId>spring-boot-starter-rest-api</artifactId>
             <version>5.17.0</version>
         </dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.3-1103-jdbc41</version>
+		</dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
     </dependencies>
 
 
@@ -34,17 +39,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </pluginRepository>
-    </pluginRepositories>
 </project>
